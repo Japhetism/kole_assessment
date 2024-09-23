@@ -8,9 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'averta': ['Averta-Semibold', 'sans-serif'], // Add your custom font here
+      },
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        'custom-purple': '#551FFF', // Add your custom color
+      },
+      width: {
+        'custom-sidebar': '214.68px', // Custom width
+      },
+      height: {
+        'custom-sidebar': '760.19px', // Custom height
       },
     },
   },
