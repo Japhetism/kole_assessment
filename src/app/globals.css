@@ -25,3 +25,9 @@ body {
     text-wrap: balance;
   }
 }
+
+@media (max-width: 768px) {
+  .w-custom-sidebar {
+      width: 250px; /* Adjust as needed */
+  }
+}
