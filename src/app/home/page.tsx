@@ -1,5 +1,6 @@
-import Activity from "@/components/Activity";
 import Dashboard from "@/components/Dashboard";
+import Activity from "@/components/Dashboard/activity";
+import Integration from "@/components/Dashboard/integration";
 import Sidebar from "@/components/Sidemenu";
 import TopBar from "@/components/Topbar";
 
@@ -13,7 +14,14 @@ const Home = () => {
                 <div className="lg:col-span-2">
                     <Dashboard />
                 </div>
-                <Activity />
+                <div className="p-6 bg-gray-50 flex-1">
+                    <div>
+                        <Activity />
+                    </div>
+                    <div className="mt-10">
+                        <Integration />
+                    </div>
+                </div>
             </div>
         </div>
     </div>

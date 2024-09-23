@@ -1,11 +1,15 @@
 import React from "react";
+import { FaEllipsisV } from "react-icons/fa";
 import { activities } from "@/fixtures/activities";
 import { IActivity } from "@/interfaces/activity";
 
 const Activity = () => {
     return (
         <div className="bg-white p-4 rounded-lg shadow-md">
-            <h3 className="font-averta text-md text-[#15192C]">Activity</h3>
+            <div className="flex justify-between items-center">
+                <h3 className="font-averta text-md text-[#15192C]">Activities</h3>
+                <FaEllipsisV className="text-gray-300 cursor-pointer text-sm" />
+            </div>
             <div className="mt-10 overflow-y-auto max-h-[600px]">
                 {activities.map((activity: IActivity, index: number) => (
                     <div key={index} className="p-4">
