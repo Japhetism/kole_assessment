@@ -1,6 +1,7 @@
 import React from "react";
 import Analysis from "./analysis";
 import ApiCalls from "./apicalls";
+import ProfitGrowth from "./profit";
 
 const Dashboard = () => {
   return (
@@ -8,6 +9,9 @@ const Dashboard = () => {
         <Analysis />
         <div className="mt-5">
             <ApiCalls />
+        </div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mt-5">
+            <ProfitGrowth />
         </div>
     </div>
   );
