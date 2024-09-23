@@ -1,5 +1,5 @@
 import React from "react";
-import { FaChevronRight, FaUsers } from "react-icons/fa";
+import { FaChevronRight, FaSlidersH, FaUsers } from "react-icons/fa";
 import ProgressBar from "@/components/progresbar";
 import { currentPlans } from "@/fixtures/currentPlans";
 import { ICurrentPlan } from "@/interfaces/currentplan";
@@ -7,7 +7,10 @@ import { ICurrentPlan } from "@/interfaces/currentplan";
 const CurrentPlan = () => {
     return (
         <div className="bg-white p-6 rounded-lg shadow-md">
-            <h3 className="font-averta text-md text-[#15192C]">Current Plan</h3>
+            <div className="flex items-center justify-between">
+                <h3 className="font-averta text-md text-[#15192C]">Current Plan</h3>
+                <FaSlidersH className="text-gray-300 cursor-pointer text-sm" />
+            </div>
             <p className="text-[#92959E] text-xs mt-1">Information and usages of your current plan</p>
             <div className="flex-1 flex mt-10 justify-between items-center">
                 <div className="p-2 rounded-md bg-[#EAF9FF]">
